@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f8f9fc;
+  color: #172033;
+}
+
+.navbar {
+  height: 80px;
+  padding: 0 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: 800;
+  color: #ffb800;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #172033;
+  font-size: 14px;
+}
+
+.login-btn,
+.book-btn {
+  border: none;
+  background: #ffbf00;
+  color: #172033;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.hero {
+  padding: 70px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  min-height: 580px;
+  background: linear-gradient(120deg, #fff 50%, #fff6d9);
+}
+
+.hero-content {
+  flex: 1;
+  max-width: 550px;
+}
+
+.tagline {
+  color: #d99d00;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 18px;
+}
+
+.hero h1 {
+  font-size: clamp(42px, 5vw, 65px);
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+
+.hero h1 span {
+  color: #ffb800;
+}
+
+.description {
+  color: #697386;
+  line-height: 1.8;
+  margin-bottom: 28px;
+}
+
+.booking-card {
+  max-width: 410px;
+  padding: 25px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 12px 35px #17203312;
+}
+
+.booking-card h3 {
+  margin-bottom: 20px;
+}
+
+.booking-card label {
+  display: block;
+  margin: 12px 0 7px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.booking-card input {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #e1e5ec;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+}
+
+.booking-card input:focus {
+  border-color: #ffb800;
+}
+
+.book-btn {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.hero-visual {
+  flex: 1;
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.circle {
+  width: min(350px, 80%);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #ffdf70;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 20px 60px #ffbf0030;
+}
+
+.car {
+  font-size: clamp(100px, 15vw, 180px);
+}
+
+.floating-card {
+  position: absolute;
+  right: 0;
+  bottom: 35px;
+  background: white;
+  padding: 18px 22px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px #17203315;
+  font-weight: 700;
+}
+
+.floating-card small {
+  color: #697386;
+  font-weight: 400;
+}
+
+.services {
+  padding: 65px 8%;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 32px;
+  margin-bottom: 35px;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.service-card {
+  background: white;
+  padding: 30px 20px;
+  border-radius: 14px;
+  box-shadow: 0 8px 25px #17203308;
+}
+
+.service-card span {
+  font-size: 35px;
+}
+
+.service-card h3 {
+  margin: 15px 0 10px;
+}
+
+.service-card p {
+  color: #697386;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+footer {
+  padding: 25px;
+  text-align: center;
+  background: #172033;
+  color: white;
+  font-size: 13px;
+}
+
+@media (max-width: 800px) {
+  .navbar {
+    padding: 0 5%;
+  }
+
+  .nav-links {
+    gap: 12px;
+  }
+
+  .nav-links a {
+    display: none;
+  }
+
+  .hero {
+    padding: 45px 6%;
+    flex-direction: column;
+  }
+
+  .hero-content {
+    width: 100%;
+  }
+
+  .hero-visual {
+    width: 100%;
+    min-height: 300px;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+}
